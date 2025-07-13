@@ -46,36 +46,51 @@ Official website for BitPad Labs, LLC - an independent software lab built to hel
 
 Visit `http://localhost:4000` in your browser to see the site.
 
+
 ## 📁 Project Structure
-Code
+
+```
 BitPadLabs-Site/
-├── _config.yml              # Jekyll configuration
-├── _data/                   # Site data files
-│   ├── team.yml             # Team member information
-│   └── products.yml         # Product information
-├── _includes/               # Reusable components
-│   ├── header.html          # Site header
-│   ├── footer.html          # Site footer
-│   └── cookie-consent.html  # Cookie consent banner
-├── _layouts/                # Page templates
-│   ├── default.html         # Main layout template
-│   └── page.html            # Content page template
-├── _posts/                  # Blog posts (format: YYYY-MM-DD-title.md)
-├── _sass/                   # SCSS partials
-│   ├── _variables.scss      # Color variables and settings
-│   ├── _base.scss           # Base styles
-│   └── _layout.scss         # Layout styles
-├── assets/                  # Static assets
-│   ├── css/                 # Compiled CSS
-│   ├── images/              # Images and graphics
-│   │   ├── logo.png         # Main BitPad Labs logo
-│   │   └── team/            # Team member photos
-│   └── js/                  # JavaScript files
-├── .github/                 # GitHub specific files
-│   └── workflows/           # GitHub Actions workflows
-├── pages/                   # Jekyll pages
-├── README.md                # Project documentation
-└── various HTML files       # Site pages (index.html, about.html, etc.)
+├── _config.yml         # Jekyll configuration
+├── _data/              # Site data (YAML)
+│   ├── team.yml        # Team member info
+│   └── products.yml    # Product info
+├── _includes/          # Reusable HTML components (header, footer, etc.)
+├── _layouts/           # Page templates (default, post, etc.)
+├── _posts/             # Blog posts (Markdown, YYYY-MM-DD-title.md)
+├── _sass/              # SCSS partials (variables, base, layout)
+├── assets/
+│   ├── css/            # Compiled CSS (from SCSS)
+│   ├── images/         # Images, graphics, and logos
+│   │   ├── leaf-bg.svg
+│   │   └── team/       # Team member photos
+│   └── js/             # JavaScript files
+├── .github/
+│   └── workflows/      # GitHub Actions workflows
+├── pages/              # Additional Jekyll pages (if any)
+├── README.md           # Project documentation
+├── LICENSE             # License info
+├── index.html          # Home page
+├── about.html          # About page
+├── blog.html           # Blog listing
+├── contact.html        # Contact page
+├── faq.html            # FAQ page
+├── portfolio.html      # Portfolio/projects
+├── privacy.html        # Privacy policy
+├── roadmap.html        # Roadmap
+├── sitemap.xml         # Sitemap
+├── team.html           # Team page
+├── tech-stack.html     # Tech stack
+├── terms.html          # Terms of service
+```
+
+**Notes:**
+- All main site pages are at the root as HTML files.
+- Images for blog posts go in `assets/images/blog/`.
+- Team member photos go in `assets/images/team/`.
+- Add new blog posts to `_posts/` using the format `YYYY-MM-DD-title.md`.
+- Add or update team/product info in `_data/team.yml` and `_data/products.yml`.
+
 
 🧩 Adding Content
 Blog Posts
