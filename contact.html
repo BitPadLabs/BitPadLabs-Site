@@ -1,0 +1,49 @@
+---
+layout: default
+title: Contact Us
+---
+
+<section class="section">
+  <div class="container">
+    <h1 class="section-title">Get In Touch</h1>
+    <p class="section-subtitle">Have a question or want to work with us? Reach out!</p>
+    
+    <div class="contact-form">
+      <form id="contactForm" action="https://formspree.io/f/info@bitpadlabs.com" method="POST">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        
+        <div class="form-submit">
+          <button type="submit" class="btn btn-primary btn-large">Send Message</button>
+        </div>
+      </form>
+    </div>
+    
+    <div class="contact-info" style="text-align: center; margin-top: 50px;">
+      <h3>Other ways to reach us</h3>
+      <p>
+        <strong>Email:</strong> <a href="mailto:info@bitpadlabs.com">info@bitpadlabs.com</a>
+      </p>
+      <p>
+        <strong>GitHub:</strong> <a href="https://github.com/BitPadLabs" target="_blank">@BitPadLabs</a>
+      </p>
+    </div>
+  </div>
+</section>

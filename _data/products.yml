@@ -1,0 +1,19 @@
+- name: Budsy
+  tagline: Your Bud Tracking Buddy
+  description: >-
+    A simple, privacy-first app that helps medical cannabis patients track their 
+    monthly usage against legal limits with a clean interface and intuitive design.
+  image: budsy-logo.png
+  url: https://budsyapp.com
+  github: https://github.com/BitPadLabs/Budsy
+  discord: coming-soon
+
+- name: GlowStatus
+  tagline: Light up your Availability
+  description: >-
+    A smart light controller that syncs Govee lights with your Google Calendar, signaling 
+    meeting status in real-time for remote workers, streamers, and busy households.
+  image: glowstatus-logo.png
+  url: https://glowstatus.app
+  github: https://github.com/Severswoed/GlowStatus
+  discord: https://discord.gg/glowstatus

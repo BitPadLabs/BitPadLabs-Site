@@ -1,0 +1,57 @@
+// Brand Colors
+$frog-green: #4CAF50;
+$leafy-green: #388E3C;
+$red-eye: #EF3B2C;
+$sunny-yellow: #FFEB3B;
+$chip-black: #1C1C1C;
+$soft-beige: #FDF7F0;
+
+// Additional Colors
+$dark-green: #0A3B07;
+$medium-green: #2E7D32;
+$light-green: #81C784;
+$off-white: #F8F8F8;
+$medium-gray: #757575;
+$light-gray: #EEEEEE;
+
+// Typography
+$font-family-heading: 'Poppins', 'Montserrat', sans-serif;
+$font-family-body: 'Helvetica Neue', Arial, sans-serif;
+$font-size-base: 16px;
+$line-height-base: 1.6;
+
+// Spacing
+$spacing-unit: 30px;
+$spacing-xs: $spacing-unit * 0.25;
+$spacing-sm: $spacing-unit * 0.5;
+$spacing-md: $spacing-unit;
+$spacing-lg: $spacing-unit * 1.5;
+$spacing-xl: $spacing-unit * 2;
+
+// Breakpoints
+$breakpoint-xs: 375px;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+// Z-index
+$z-index-header: 100;
+$z-index-overlay: 90;
+$z-index-dropdown: 80;
+
+// Transitions
+$transition-fast: 0.2s ease;
+$transition-base: 0.3s ease;
+$transition-slow: 0.5s ease;
+
+// Shadows
+$shadow-sm: 0 2px 5px rgba(0, 0, 0, 0.1);
+$shadow-md: 0 4px 10px rgba(0, 0, 0, 0.12);
+$shadow-lg: 0 10px 20px rgba(0, 0, 0, 0.15);
+
+// Borders
+$border-radius-sm: 4px;
+$border-radius-md: 8px;
+$border-radius-lg: 16px;
+$border-radius-full: 9999px;

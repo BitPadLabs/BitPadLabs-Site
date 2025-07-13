@@ -1,0 +1,15 @@
+- name: Hannah Cassels
+  role: Chief Executive Officer
+  github: hannahcassels
+  image: hannah.jpg
+  bio: >-
+    Hannah leads the vision for BitPad Labs and specializes in full-stack development, 
+    product ownership, and small business operations. She is the legal owner of BitPad Labs, LLC.
+
+- name: Christopher Inman
+  role: Chief Technology Officer
+  github: Severswoed
+  image: chris.jpg
+  bio: >-
+    Chris serves as the engineering mentor and technical lead. He focuses on infrastructure, 
+    product strategy, DevSecOps, and capability transfer to ensure long-term success.

@@ -1,0 +1,204 @@
+---
+layout: default
+title: Frequently Asked Questions
+---
+
+<section class="section">
+  <div class="container">
+    <h1 class="section-title">Frequently Asked Questions</h1>
+    <p class="section-subtitle">Quick answers to common questions about BitPad Labs and our products</p>
+    
+    <div class="faq-container">
+      <div class="faq-category">
+        <h2>About BitPad Labs</h2>
+        
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>What is BitPad Labs?</h3>
+            <div class="toggle-icon">+</div>
+          </div>
+          <div class="faq-answer">
+            <p>BitPad Labs is an independent software development lab founded in Mississippi. We focus on creating clean, scalable software solutions that solve real problems for real people. Our company was founded by Christopher Inman and Hannah Cassels with a mission to blend technology with human-centered design.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Where is BitPad Labs located?</h3>
+            <div class="toggle-icon">+</div>
+          </div>
+          <div class="faq-answer">
+            <p>BitPad Labs, LLC is a Mississippi-based company. While we operate primarily as a remote team, our company is legally registered in Mississippi.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>What does your company name mean?</h3>
+            <div class="toggle-icon">+</div>
+          </div>
+          <div class="faq-answer">
+            <p>The name "BitPad Labs" combines "Bit" (representing digital technology) and "Pad" (a comfortable space), creating the concept of a comfortable digital workspace where technology thrives. The "Labs" portion emphasizes our commitment to innovation and experimentation.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="faq-category">
+        <h2>Our Products</h2>
+        
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>What is Budsy?</h3>
+            <div class="toggle-icon">+</div>
+          </div>
+          <div class="faq-answer">
+            <p>Budsy is a privacy-focused cannabis unit tracking app designed for medical cannabis patients. It helps users track their monthly allotment limits as defined by their state regulations. Initially focusing on Mississippi's medical program, Budsy plans to expand to support multiple states.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>What is GlowStatus?</h3>
+            <div class="toggle-icon">+</div>
+          </div>
+          <div class="faq-answer">
+            <p>GlowStatus is a smart light integration tool that syncs your Google Calendar with Govee smart lights to visually display your availability status. It's perfect for remote workers, streamers, and busy households who need visual indicators of when someone is in a meeting or needs focus time.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Are your products open source?</h3>
+            <div class="toggle-icon">+</div>
+          </div>
+          <div class="faq-answer">
+            <p>GlowStatus is available as an open-source project under the MIT license. You can find the source code on our GitHub. Budsy has some open-source components, but the core application is proprietary. We believe in transparency and community-driven development where possible.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="faq-category">
+        <h2>Collaboration & Support</h2>
+        
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>How can I contribute to your projects?</h3>
+            <div class="toggle-icon">+</div>
+          </div>
+          <div class="faq-answer">
+            <p>We welcome contributions! The best way to contribute is through our GitHub repositories. You can submit issues, pull requests, or join discussions. For GlowStatus specifically, join our Discord server where we coordinate community contributions.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>How can I get support for your products?</h3>
+            <div class="toggle-icon">+</div>
+          </div>
+          <div class="faq-answer">
+            <p>Support is available through several channels: GitHub Discussions for technical issues, product-specific Discord servers for community support, or direct email to info@bitpadlabs.com for business inquiries. Each product also has dedicated documentation available on its respective website.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Do you offer custom software development services?</h3>
+            <div class="toggle-icon">+</div>
+          </div>
+          <div class="faq-answer">
+            <p>While our primary focus is on our own products, we selectively take on custom development projects that align with our expertise and mission. If you have a project in mind, please contact us at info@bitpadlabs.com with details, and we'll let you know if it's a good fit.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .faq-category {
+    margin-bottom: 40px;
+  }
+  
+  .faq-category h2 {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgba(76, 175, 80, 0.3);
+  }
+  
+  .faq-item {
+    margin-bottom: 15px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: white;
+  }
+  
+  .faq-question {
+    padding: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .faq-question:hover {
+    background-color: rgba(76, 175, 80, 0.1);
+  }
+  
+  .faq-question h3 {
+    margin: 0;
+    font-size: 1.1rem;
+  }
+  
+  .toggle-icon {
+    font-size: 20px;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+  }
+  
+  .faq-item.active .toggle-icon {
+    transform: rotate(45deg);
+  }
+  
+  .faq-answer {
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+  
+  .faq-item.active .faq-answer {
+    padding: 0 20px 20px;
+    max-height: 1000px;
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const faqItems = document.querySelectorAll('.faq-item');
+    
+    faqItems.forEach(item => {
+      const question = item.querySelector('.faq-question');
+      
+      question.addEventListener('click', () => {
+        const isActive = item.classList.contains('active');
+        
+        // Close all other items
+        faqItems.forEach(otherItem => {
+          otherItem.classList.remove('active');
+        });
+        
+        // Toggle current item
+        if (!isActive) {
+          item.classList.add('active');
+        }
+      });
+    });
+  });
+</script>

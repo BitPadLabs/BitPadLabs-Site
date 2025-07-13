@@ -1,0 +1,24 @@
+# Site settings
+title: BitPad Labs
+email: info@bitpadlabs.com
+description: >-
+  Small bytes. Big leaps. BitPad Labs is an independent software lab built to help real people 
+  solve real problems through clean, scalable technology.
+baseurl: ""
+url: "https://bitpadlabs.com"
+github_username: BitPadLabs
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Brand colors
+brand:
+  frog_green: "#4CAF50"
+  leafy_green: "#388E3C"
+  red_eye: "#EF3B2C"
+  sunny_yellow: "#FFEB3B"
+  chip_black: "#1C1C1C"
+  soft_beige: "#FDF7F0"
