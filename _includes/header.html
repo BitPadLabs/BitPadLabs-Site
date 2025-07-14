@@ -1,36 +1,10 @@
 <header class="site-header">
   <div class="container">
-    <div class="header-content">
-      <a href="{{ site.baseurl }}/" class="logo">
+    <a href="{{ site.baseurl }}/" class="logo">
       <img src="{{ "/assets/images/logo.png" | relative_url }}" alt="BitPad Labs Logo">
       <span class="logo-text">BitPad Labs</span>
     </a>
-      
-      <!-- Desktop Navigation -->
-      <nav class="desktop-nav">
-        <ul>
-          <li><a href="{{ site.baseurl }}/" {% if page.url == "/" %}class="active"{% endif %}>Home</a></li>
-          <li><a href="{{ site.baseurl }}/portfolio" {% if page.url == "/portfolio/" %}class="active"{% endif %}>Portfolio</a></li>
-          <li><a href="{{ site.baseurl }}/about" {% if page.url == "/about/" %}class="active"{% endif %}>About Us</a></li>
-          <li><a href="{{ site.baseurl }}/team" {% if page.url == "/team/" %}class="active"{% endif %}>Our Team</a></li>
-          <li><a href="{{ site.baseurl }}/blog" {% if page.url == "/blog/" %}class="active"{% endif %}>Blog</a></li>
-          <li><a href="{{ site.baseurl }}/roadmap" {% if page.url == "/roadmap/" %}class="active"{% endif %}>Roadmap</a></li>
-          <li><a href="{{ site.baseurl }}/contact" {% if page.url == "/contact/" %}class="active"{% endif %}>Contact</a></li>
-        </ul>
-      </nav>
-      
-      <!-- Mobile Menu Toggle Button -->
-      <button id="mobile-menu-toggle" aria-expanded="false" aria-controls="mobile-nav" aria-label="Toggle navigation menu">
-        <div class="hamburger-icon">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </button>
-    </div>
-    
-    <!-- Mobile Navigation -->
-    <nav id="mobile-nav">
+    <nav class="main-nav">
       <ul>
         <li><a href="{{ site.baseurl }}/" {% if page.url == "/" %}class="active"{% endif %}>Home</a></li>
         <li><a href="{{ site.baseurl }}/portfolio" {% if page.url == "/portfolio/" %}class="active"{% endif %}>Portfolio</a></li>
@@ -41,8 +15,10 @@
         <li><a href="{{ site.baseurl }}/contact" {% if page.url == "/contact/" %}class="active"{% endif %}>Contact</a></li>
       </ul>
     </nav>
+    <button class="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
   </div>
 </header>
-
-<!-- Make sure to include the mobile menu script -->
-<script src="assets/js/mobileMenu.js"></script>
