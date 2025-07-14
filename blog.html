@@ -9,97 +9,24 @@ title: Blog & News
     <p class="section-subtitle">Updates, insights, and announcements from BitPad Labs</p>
     
     <div class="blog-grid">
-      <!-- Sample blog posts - you can replace these with real posts later -->
+      {% for post in site.posts %}
       <div class="blog-post card">
         <div class="post-image">
-          <img src="{{ site.baseurl }}/assets/images/logo.png" alt="BitPad Labs Launch">
+          {% if post.image %}
+            <img src="{{ post.image | relative_url }}" alt="{{ post.title }}">
+          {% else %}
+            <img src="{{ site.baseurl }}/assets/images/logo.png" alt="BitPad Labs Blog">
+          {% endif %}
         </div>
         <div class="post-content">
-          <span class="post-date">July 13, 2025</span>
-          <h3>BitPad Labs Official Launch</h3>
-          <p>Today marks the official launch of BitPad Labs, LLC. We're excited to bring our innovative software solutions to users worldwide...</p>
-          <a href="#" class="btn btn-secondary">Read More</a>
+          <span class="post-date">{{ post.date | date: "%B %d, %Y" }}</span>
+          <h3>{{ post.title }}</h3>
+          <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
+          <a href="{{ post.url | relative_url }}" class="btn btn-third">Read More</a>
         </div>
       </div>
-      
-      <div class="blog-post card">
-        <div class="post-image">
-          <img src="{{ site.baseurl }}/assets/images/glowstatus-logo.png" alt="GlowStatus Update">
-        </div>
-        <div class="post-content">
-          <span class="post-date">July 1, 2025</span>
-          <h3>GlowStatus v2.1.0 Released</h3>
-          <p>We're thrilled to announce the release of GlowStatus v2.1.0 with new features including improved calendar integration and custom themes...</p>
-          <a href="#" class="btn btn-secondary">Read More</a>
-        </div>
-      </div>
-      
-      <div class="blog-post card">
-        <div class="post-image">
-          <img src="{{ site.baseurl }}/assets/images/budsy-logo.png" alt="Budsy Development">
-        </div>
-        <div class="post-content">
-          <span class="post-date">June 15, 2025</span>
-          <h3>Budsy Development Update</h3>
-          <p>Our team has been making great progress on Budsy, our cannabis unit tracking app. Here's what to expect in the upcoming TestFlight release...</p>
-          <a href="#" class="btn btn-secondary">Read More</a>
-        </div>
-      </div>
+      {% endfor %}
     </div>
   </div>
 </section>
 
-<style>
-  .blog-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    gap: 30px;
-    margin-top: 40px;
-  }
-  
-  .blog-post {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-  }
-  
-  .post-image {
-    height: 200px;
-    overflow: hidden;
-  }
-  
-  .post-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-  }
-  
-  .blog-post:hover .post-image img {
-    transform: scale(1.05);
-  }
-  
-  .post-content {
-    padding: 20px;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .post-date {
-    color: #757575;
-    font-size: 0.9rem;
-    margin-bottom: 8px;
-  }
-  
-  .post-content p {
-    flex: 1;
-    margin-bottom: 20px;
-  }
-  
-  @media (max-width: 768px) {
-    .blog-grid {
-      grid-template-columns: 1fr;
-    }
-  }
-</style>
