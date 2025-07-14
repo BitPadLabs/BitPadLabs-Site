@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<section class="section">
+  <div class="container">
+    <div class="blog-post card" style="max-width: 700px; margin: 0 auto;">
+      <div class="post-content">
+        <h1>{{ page.title }}</h1>
+        <span class="post-date">{{ page.date | date: "%B %d, %Y" }}</span>
+        {% if page.image %}
+          <div class="post-image" style="text-align:center; margin-bottom:24px;">
+            <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" style="max-width:220px; max-height:220px; margin:0 auto; display:block;" />
+          </div>
+        {% endif %}
+        {{ content }}
+      </div>
+    </div>
+  </div>
+</section>
