@@ -130,6 +130,18 @@ ul, ol {
       text-decoration: none;
     }
   }
+
+  &-third {
+    background-color: transparent;
+    border: 2px solid $frog-green;
+    color: $frog-green;
+    
+    &:hover {
+      background-color: rgba($frog-green, 0.1);
+      border: 2px solid $frog-green;
+      text-decoration: none;
+    }
+  }
   
   &-large {
     padding: $spacing-md $spacing-lg;
