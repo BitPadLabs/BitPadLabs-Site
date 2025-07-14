@@ -1,0 +1,118 @@
+// Portfolio & Featured Project Cards — matches Blog Announcement Card style
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 2.5rem;
+  margin-top: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.portfolio-item.card {
+  background: #fff;
+  border-radius: 1.25rem;
+  box-shadow: 0 6px 36px rgba(44,62,80,0.07), 0 1.5px 6px rgba(44,62,80,0.03);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  transition: box-shadow 0.2s, transform 0.2s;
+  padding: 0; // Image is flush to top
+  overflow: hidden;
+
+  &:hover {
+    box-shadow: 0 10px 40px rgba(44,62,80,0.15), 0 2px 8px rgba(44,62,80,0.07);
+    transform: translateY(-4px) scale(1.012);
+  }
+
+  .product-image {
+    width: 100%;
+    background: #f8f6f0;
+    min-height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #f1ece3;
+    padding: 2.5rem 1.5rem 1.5rem 1.5rem;
+
+    img {
+      max-width: 180px;
+      max-height: 120px;
+      object-fit: contain;
+      border-radius: 1rem;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+      background: transparent;
+      margin: 0 auto;
+      display: block;
+    }
+  }
+
+  .card-body {
+    padding: 2rem 1.5rem 1.5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    h3 {
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin-bottom: 0.25em;
+      letter-spacing: -0.01em;
+      color: #2c3e50;
+    }
+
+    .tagline {
+      font-size: 1rem;
+      color: #89b153;
+      margin-bottom: 0.7em;
+      font-weight: 500;
+      letter-spacing: 0.01em;
+    }
+    p {
+      font-size: 1.06rem;
+      color: #5B6066;
+      margin-bottom: 1.1em;
+      line-height: 1.55;
+      flex: 1;
+    }
+
+    .product-meta {
+      margin-top: auto;
+      display: flex;
+      gap: 0.8rem;
+      align-items: center;
+
+      .btn {
+        font-size: 0.99rem;
+        padding: 0.45em 1.1em;
+        border-radius: 0.7em;
+        font-weight: 500;
+        box-shadow: none;
+      }
+
+      a {
+        display: flex;
+        align-items: center;
+        gap: 0.33em;
+
+        svg {
+          margin-right: 0.18em;
+          vertical-align: text-bottom;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+    gap: 1.4rem;
+  }
+  .portfolio-item.card .card-body {
+    padding: 1.2rem 1rem 1.2rem 1rem;
+  }
+  .portfolio-item.card .product-image {
+    padding: 1.2rem 1rem 1rem 1rem;
+    min-height: 120px;
+  }
+}
