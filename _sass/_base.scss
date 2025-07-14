@@ -172,3 +172,33 @@ ul, ol {
     box-shadow: $shadow-lg;
   }
 }
+
+.site-image,
+.homepage-image,
+.portfolio-image,
+img {
+  max-width: 320px;
+  max-height: 320px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* Optional: Rounded corners for consistency */
+  border-radius: 16px;
+  /* Optional: Soft drop shadow for visual separation */
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+
+/* If your homepage/portfolio sections have specific container classes, target images within them: */
+.homepage-section img,
+.portfolio-section img {
+  max-width: 320px;
+  max-height: 320px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
