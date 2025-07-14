@@ -12,12 +12,19 @@
 }
 
 .value-card {
-  background-color: $leafy-green;
-  color: white;
+  background-color: transparent;
+  color: $frog-green;
+  border: 2px solid $frog-green;
   padding: 20px;
   border-radius: 12px;
   box-shadow: 0 4px 16px rgba($chip-black, 0.08);
-  border: none;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+}
+
+.value-card:hover {
+  background-color: $leafy-green;
+  color: white;
+  border-color: $leafy-green;
 }
 
 @media (max-width: 768px) {
