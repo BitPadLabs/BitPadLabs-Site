@@ -125,6 +125,7 @@ ul, ol {
     
     &:hover {
       background-color: $leafy-green;
+      border: 2px solid $frog-green;
       color: white;
       text-decoration: none;
     }
