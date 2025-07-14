@@ -113,7 +113,7 @@ ul, ol {
 
   &:hover {
     background-color: $leafy-green;
-    color: $frog-green; // Change this if you want a different color
+    color: white;
     text-decoration: none;
   }
 }
@@ -121,10 +121,11 @@ ul, ol {
   &-secondary {
     background-color: transparent;
     border: 2px solid $frog-green;
-    color: $frog-green;
+    color: white;
     
     &:hover {
-      background-color: rgba($frog-green, 0.1);
+      background-color: $leafy-green;
+      color: white;
       text-decoration: none;
     }
   }
