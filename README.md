@@ -1,6 +1,6 @@
-# 🐸 BitPad Labs Website
+# 🐸 BitPadLabs Website
 
-Official website for BitPad Labs, LLC - an independent software lab built to help real people solve real problems through clean, scalable technology.
+Official website for BitPadLabs, LLC - an independent software lab built to help real people solve real problems through clean, scalable technology.
 
 [![Built with Jekyll](https://img.shields.io/badge/Built_with-Jekyll-red.svg)](https://jekyllrb.com/)
 [![Hosted on GitHub Pages](https://img.shields.io/badge/Hosted_on-GitHub_Pages-black.svg)](https://pages.github.com/)
@@ -126,7 +126,7 @@ Follow this format for each team member:
   image: filename.jpg  # Place in assets/images/team/
   bio: >-
     A brief paragraph about this team member,
-    their background, expertise, and role at BitPad Labs.
+    their background, expertise, and role at BitPadLabs.
 Add the team member's photo to assets/images/team/ directory
 The changes will automatically appear on the team page
 Products/Portfolio Items
@@ -162,7 +162,7 @@ This site is automatically built and deployed using GitHub Pages and GitHub Acti
 You can see the build status in the Actions tab of this repository.
 
 📄 License
-© 2025 BitPad Labs, LLC. All rights reserved.
+© 2025 BitPadLabs, LLC. All rights reserved.
 
 📞 Contact
 For any questions or feedback about the website, please contact:

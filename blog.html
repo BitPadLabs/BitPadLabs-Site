@@ -6,7 +6,7 @@ title: Blog & News
 <section class="section">
   <div class="container">
     <h1 class="section-title">Blog & News</h1>
-    <p class="section-subtitle">Updates, insights, and announcements from BitPad Labs</p>
+    <p class="section-subtitle">Updates, insights, and announcements from BitPadLabs</p>
     
     <div class="blog-grid">
       {% for post in site.posts %}
@@ -15,7 +15,7 @@ title: Blog & News
           {% if post.image %}
             <img src="{{ post.image | relative_url }}" alt="{{ post.title }}">
           {% else %}
-            <img src="{{ site.baseurl }}/assets/images/logo.png" alt="BitPad Labs Blog">
+            <img src="{{ site.baseurl }}/assets/images/logo.png" alt="BitPadLabs Blog">
           {% endif %}
         </div>
         <div class="post-content">

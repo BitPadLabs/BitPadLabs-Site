@@ -1,8 +1,8 @@
 # Site settings
-title: BitPad Labs
+title: BitPadLabs
 email: info@bitpadlabs.com
 description: >-
-  Small bytes. Big leaps. BitPad Labs is an independent software lab built to help real people 
+  Small bytes. Big leaps. BitPadLabs is an independent software lab built to help real people 
   solve real problems through clean, scalable technology.
 baseurl: ""
 url: "https://bitpadlabs.com"

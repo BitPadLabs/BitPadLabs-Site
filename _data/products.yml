@@ -1,12 +1,10 @@
-- name: Budsy
-  tagline: Your Bud Tracking Buddy
+- name: budsyapp
+  tagline: 
   description: >-
     A simple, privacy-first app that helps medical cannabis patients track their 
     monthly usage against legal limits with a clean interface and intuitive design.
   image: budsy-logo.png
   url: https://budsyapp.com
-  github: https://github.com/BitPadLabs/Budsy
-  discord: coming-soon
 
 - name: GlowStatus
   tagline: Light up your Availability

@@ -2,13 +2,13 @@
   <div class="container">
     <div class="footer-content">
       <div class="footer-logo">
-        <img src="{{ "/assets/images/logo.png" | relative_url }}" alt="BitPad Labs Logo">
+        <img src="{{ "/assets/images/logo.png" | relative_url }}" alt="BitPadLabs Logo">
         <p class="tagline">Small bytes. Big leaps.</p>
       </div>
       
       <div class="footer-links">
         <div class="link-group">
-          <h4>BitPad Labs</h4>
+          <h4>BitPadLabs</h4>
           <ul>
             <li><a href="{{ site.baseurl }}/about">About Us</a></li>
             <li><a href="{{ site.baseurl }}/team">Our Team</a></li>
@@ -22,7 +22,7 @@
         <div class="link-group">
           <h4>Products</h4>
           <ul>
-            <li><a href="https://budsyapp.com">Budsy App</a></li>
+            <li><a href="https://budsyapp.com">budsyapp</a></li>
             <li><a href="https://glowstatus.app">GlowStatus</a></li>
           </ul>
         </div>
@@ -37,13 +37,11 @@
       </div>
       
       <div class="footer-team">
-        <h4>Team</h4>
+        <h4>NAICS Codes</h4>
         <div class="team-members">
-          {% for member in site.data.team %}
+          {% for code in site.data.naics %}
           <div class="team-member">
-            <a href="https://github.com/{{ member.github }}" target="_blank" rel="noopener">
-              {{ member.name }}, {{ member.role }}
-            </a>
+              {{ code.naics }}
           </div>
           {% endfor %}
         </div>
@@ -51,7 +49,7 @@
     </div>
     
     <div class="footer-bottom">
-      <p>&copy; {{ site.time | date: '%Y' }} BitPad Labs, LLC. A Mississippi Limited Liability Company. All rights reserved.</p>
+      <p>&copy; {{ site.time | date: '%Y' }} BitPadLabs, LLC. A Limited Liability Company. All rights reserved.</p>
       <a href="mailto:{{ site.email }}">{{ site.email }}</a>
     </div>
   </div>
