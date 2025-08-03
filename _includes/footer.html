@@ -44,7 +44,8 @@
         <div class="team-members">
           {% for code in site.data.naics %}
           <div class="team-member">
-              {{ code.naics }}
+              {{ code.code }}
+              <span class="team-member-desc">{{ code.desc }}</span>
           </div>
           {% endfor %}
         </div>
