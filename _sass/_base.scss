@@ -1,9 +1,11 @@
 // Contracting section title in footer
 .contracting-title {
   color: $frog-green;
-  font-size: 1.1em;
-  font-weight: 700;
-  margin-bottom: 0.5em;
+  font-family: $font-family-heading;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: $spacing-md;
+  line-height: 1.3;
 }
 // About page styles
 .about-content {
