@@ -8,6 +8,11 @@ baseurl: ""
 url: "https://bitpadlabs.com"
 github_username: BitPadLabs
 
+# Company identifiers 
+duns: "144845731"
+uei: "in-progress"
+cage: "in-progress"
+
 # Build settings
 markdown: kramdown
 plugins:
