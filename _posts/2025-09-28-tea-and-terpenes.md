@@ -6,12 +6,12 @@ categories: [events, community, outreach]
 tags: [budsyapp, cannabis, education, event, terpenes, community]
 date: 2025-09-28
 excerpt: "Come meet the BudsyApp team at Tea & Terpenes today! Hannah will be there with swag, terpene education, and demos of your favorite bud tracking app."
-image: /assets/img/events/2025-09-28-tea-and-terpenes.jpeg
+image: /assets/images/events/2025-09-28-tea-and-terpenes.jpeg
 gallery:
-  - /assets/img/events/2025-09-28-tea-and-terpenes.jpeg
-  - /assets/img/events/2025-09-28-tea-and-terpenes-2.JPG
-  - /assets/img/events/2025-09-28-tea-and-terpenes-3.jpeg
-  - /assets/img/events/2025-09-28-tea-and-terpenes-4.png
+  - /assets/images/events/2025-09-28-tea-and-terpenes.jpeg
+  - /assets/images/events/2025-09-28-tea-and-terpenes-2.JPG
+  - /assets/images/events/2025-09-28-tea-and-terpenes-3.jpeg
+  - /assets/images/events/2025-09-28-tea-and-terpenes-4.png
 ---
 
 **Today is the day!** 🌿☕

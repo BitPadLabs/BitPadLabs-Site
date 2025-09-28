@@ -4,3 +4,13 @@
 @import "variables";
 @import "base";
 @import "layout";
+
+/* CSS Variables for post theme support */
+:root {
+  --budsy-title: #F6A9A0;
+  --budsy-subtitle: #89b153;
+  --budsy-text: #4A6735;
+  --budsy-cream: #FFF8E7;
+  --budsy-card-background: #FFFFFF;
+  --budsy-card-shadow: rgba(137, 177, 83, 0.15);
+}
