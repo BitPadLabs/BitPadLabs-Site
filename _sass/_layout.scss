@@ -1,5 +1,10 @@
 @import "variables";
 
+// Main content wrapper for posts
+.main-content {
+  background: transparent;
+}
+
 // Header
 .site-header {
   background-color: rgba($dark-green, 0.95);

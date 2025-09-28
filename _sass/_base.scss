@@ -336,7 +336,7 @@ ul, ol {
 
 // Sections
 .section {
-  padding: $spacing-xl 0;
+  padding: 2rem 0; /* Extra spacing for blog pages */
   
   &-title {
     text-align: center;
@@ -400,19 +400,23 @@ img {
 .post {
   max-width: 800px;
   margin: 0 auto;
-  padding: 2rem 0;
+  padding: 4rem 2rem;
+  background: var(--budsy-cream);
+  min-height: 100vh;
 }
 
 .post-featured-image {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   text-align: center;
+  padding: 2rem 0;
 }
 
 .post-featured-image .featured-image {
   max-width: 100%;
+  width: 100%;
   height: auto;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(137,177,83,0.25);
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(137,177,83,0.25);
   transition: transform 0.3s ease;
 }
 
@@ -480,8 +484,8 @@ img {
 
 .gallery-container {
   position: relative;
-  max-width: 800px;
-  margin: 0 auto;
+  max-width: 100%;
+  margin: 2rem 0;
   background: var(--budsy-card-background);
   border-radius: 15px;
   box-shadow: 0 5px 20px var(--budsy-card-shadow);
@@ -490,7 +494,7 @@ img {
 
 .gallery-slider {
   position: relative;
-  height: 500px;
+  height: 600px;
   overflow: hidden;
 }
 
