@@ -2,19 +2,92 @@
 layout: default
 ---
 
-<section class="section">
-  <div class="container">
-    <div class="blog-post card" style="max-width: 700px; margin: 0 auto;">
-      <div class="post-content">
-        <h1>{{ page.title }}</h1>
-        <span class="post-date">{{ page.date | date: "%B %d, %Y" }}</span>
-        {% if page.image %}
-          <div class="post-image" style="text-align:center; margin-bottom:24px;">
-            <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" style="max-width:220px; max-height:220px; margin:0 auto; display:block;" />
-          </div>
-        {% endif %}
-        {{ content }}
+<article class="post">
+  <header class="post-header">
+    {% if page.image %}
+      <div class="post-featured-image">
+        <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" class="featured-image">
       </div>
+    {% endif %}
+    
+    <h1 class="post-title" style="color: var(--budsy-title);">{{ page.title }}</h1>
+    
+    <div class="post-meta">
+      <span class="post-date" style="color: var(--budsy-subtitle);">{{ page.date | date: "%B %d, %Y" }}</span>
+    </div>
+  </header>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+  {% if page.gallery %}
+  <div class="post-gallery">
+    <h3 style="color: var(--budsy-title); text-align: center; margin-bottom: 2rem;">Event Gallery</h3>
+    
+    <div class="gallery-container">
+      <div class="gallery-slider">
+        {% for image in page.gallery %}
+        <div class="gallery-slide {% if forloop.first %}active{% endif %}">
+          <img src="{{ image | relative_url }}" alt="Event Photo {{ forloop.index }}" class="gallery-image">
+        </div>
+        {% endfor %}
+      </div>
+      
+      {% if page.gallery.size > 1 %}
+      <div class="gallery-controls">
+        <button class="gallery-btn prev-btn" onclick="changeSlide(-1)">❮</button>
+        <button class="gallery-btn next-btn" onclick="changeSlide(1)">❯</button>
+      </div>
+      
+      <div class="gallery-dots">
+        {% for image in page.gallery %}
+        <span class="gallery-dot {% if forloop.first %}active{% endif %}" onclick="currentSlide({{ forloop.index }})"></span>
+        {% endfor %}
+      </div>
+      {% endif %}
     </div>
   </div>
-</section>
+
+  <script>
+    let slideIndex = 1;
+
+    function changeSlide(n) {
+      showSlide(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlide(slideIndex = n);
+    }
+
+    function showSlide(n) {
+      let slides = document.getElementsByClassName("gallery-slide");
+      let dots = document.getElementsByClassName("gallery-dot");
+      
+      if (n > slides.length) { slideIndex = 1; }
+      if (n < 1) { slideIndex = slides.length; }
+      
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].classList.remove("active");
+      }
+      
+      for (let i = 0; i < dots.length; i++) {
+        dots[i].classList.remove("active");
+      }
+      
+      if (slides[slideIndex - 1]) {
+        slides[slideIndex - 1].classList.add("active");
+      }
+      
+      if (dots[slideIndex - 1]) {
+        dots[slideIndex - 1].classList.add("active");
+      }
+    }
+
+    // Optional: Auto-advance slides every 5 seconds
+    setInterval(function() {
+      changeSlide(1);
+    }, 5000);
+  </script>
+  {% endif %}
+</article>
