@@ -4,7 +4,15 @@ document.addEventListener('DOMContentLoaded', () => {
   const mainNav = document.querySelector('.main-nav');
   
   if (menuToggle && mainNav) {
-    menuToggle.addEventListener('click', () => {
+    menuToggle.addEventListener('click', function() {
+      menuToggle.classList.toggle('active');
+      mainNav.classList.toggle('active');
+      document.body.classList.toggle('menu-open');
+    });
+    
+    // Also add touch event for mobile
+    menuToggle.addEventListener('touchend', function(e) {
+      e.preventDefault();
       menuToggle.classList.toggle('active');
       mainNav.classList.toggle('active');
       document.body.classList.toggle('menu-open');

@@ -87,18 +87,23 @@
   background: transparent;
   border: none;
   cursor: pointer;
-  padding: 0;
-  z-index: 100;
+  padding: 10px;
+  margin: -10px;
+  position: relative;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
   
   span {
+    display: block;
     height: 2px;
     width: 100%;
     background-color: white;
     transition: all $transition-base;
+    pointer-events: none;
   }
   
   @media (max-width: $breakpoint-md) {
-    display: flex !important;
+    display: flex;
   }
 }
 
@@ -469,7 +474,7 @@
       background-color: $dark-green;
       padding: 70px 15px 20px;
       transition: right 0.3s ease;
-      z-index: 90;
+      z-index: 1000;
       box-shadow: -2px 0 10px rgba(0, 0, 0, 0.3);
       overflow-y: auto;
       
@@ -495,7 +500,8 @@
     }
     
     .menu-toggle {
-      z-index: 100;
+      position: relative;
+      z-index: 1001;
       
       &.active {
         span {
@@ -525,7 +531,7 @@
         right: 0;
         bottom: 0;
         background: rgba(0, 0, 0, 0.5);
-        z-index: 80;
+        z-index: 999;
       }
     }
   }
@@ -533,10 +539,6 @@
 
 // Desktop visibility controls
 @media (min-width: 769px) {
-  .main-nav {
-    display: block !important;
-  }
-  
   .menu-toggle {
     display: none !important;
   }
@@ -544,7 +546,7 @@
 
 // Extra small mobile screens
 @media (max-width: 480px) {
-  .main-nav {
+  .site-footer .main-nav {
     width: 70%;
     max-width: 250px;
     padding: 70px 10px 20px;
