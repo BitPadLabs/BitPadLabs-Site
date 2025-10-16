@@ -19,12 +19,14 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
   
-  // Close mobile menu when clicking outside
+  // Close mobile menu when clicking outside (but not on links)
   document.addEventListener('click', (e) => {
     const isClickInsideMenu = mainNav?.contains(e.target);
     const isClickOnToggle = menuToggle?.contains(e.target);
+    const isClickOnLink = e.target.tagName === 'A' || e.target.closest('a');
     
-    if (mainNav?.classList.contains('active') && !isClickInsideMenu && !isClickOnToggle) {
+    // Only close if clicking outside AND not on a link
+    if (mainNav?.classList.contains('active') && !isClickInsideMenu && !isClickOnToggle && !isClickOnLink) {
       mainNav.classList.remove('active');
       menuToggle?.classList.remove('active');
       document.body.classList.remove('menu-open');
@@ -36,13 +38,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const navLinks = mainNav.querySelectorAll('a');
     navLinks.forEach(link => {
       link.addEventListener('click', (e) => {
-        // Don't prevent default - let the link navigate
-        // Close menu after a tiny delay to ensure navigation starts
-        setTimeout(() => {
-          mainNav.classList.remove('active');
-          menuToggle?.classList.remove('active');
-          document.body.classList.remove('menu-open');
-        }, 100);
+        // Allow default navigation to happen
+        // Close menu immediately so it animates while page loads
+        mainNav.classList.remove('active');
+        menuToggle?.classList.remove('active');
+        document.body.classList.remove('menu-open');
       });
     });
   }
