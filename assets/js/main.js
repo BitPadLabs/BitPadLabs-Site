@@ -23,6 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
   // Close mobile menu when clicking the overlay (body.menu-open:before)
   document.body.addEventListener('click', (e) => {
+    // Only close if menu is open and click is NOT inside the menu
     if (document.body.classList.contains('menu-open') && 
         !mainNav?.contains(e.target) && 
         !menuToggle?.contains(e.target)) {
@@ -31,27 +32,6 @@ document.addEventListener('DOMContentLoaded', () => {
       document.body.classList.remove('menu-open');
     }
   });
-  
-  // Close mobile menu when clicking a nav link
-  if (mainNav) {
-    const navLinks = mainNav.querySelectorAll('a');
-    navLinks.forEach(link => {
-      link.addEventListener('click', (e) => {
-        const href = link.getAttribute('href');
-        
-        // Check if it's an anchor link on the same page
-        if (href && href.startsWith('#')) {
-          // For anchor links, close the menu
-          mainNav.classList.remove('active');
-          menuToggle?.classList.remove('active');
-          document.body.classList.remove('menu-open');
-        } else {
-          // For navigation to other pages, do nothing - let the browser navigate
-          // The menu will disappear when the page unloads
-        }
-      });
-    });
-  }
   
   // Contact form submission
   const contactForm = document.getElementById('contactForm');
