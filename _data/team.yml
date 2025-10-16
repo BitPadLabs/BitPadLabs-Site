@@ -8,12 +8,20 @@
     one of the legal owners of BitPadLabs, LLC.
 
 - name: Jaime Inman
-  role: Chief Marketing Officer
+  role: Chief Financial Officer
   image: jaime3.jpg
   bio: >-
     Jaime is the marketing strategist and creative director. She manages the brand,
     marketing campaigns, and community engagement to drive growth and awareness.  She 
     is one of the legal owners of BitPadLabs, LLC
+
+- name: Melanie Amerson
+  role: Chief Growth Officer
+  image: melanie.jpg
+  bio: >-
+    Melanie drives business development and strategic partnerships for BitPadLabs.
+    She focuses on market expansion, federal and state contracts, and scaling operations
+    to accelerate company growth.
 
 - name: Christopher Inman
   role: Chief Technology Officer
