@@ -32,15 +32,23 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
   
-  // Close mobile menu when clicking a nav link - NO preventDefault or stopPropagation
+  // Close mobile menu when clicking a nav link
   if (mainNav) {
     const navLinks = mainNav.querySelectorAll('a');
     navLinks.forEach(link => {
-      link.addEventListener('click', () => {
-        // Just close the menu, let the link navigate normally
-        mainNav.classList.remove('active');
-        menuToggle?.classList.remove('active');
-        document.body.classList.remove('menu-open');
+      link.addEventListener('click', (e) => {
+        const href = link.getAttribute('href');
+        
+        // Check if it's an anchor link on the same page
+        if (href && href.startsWith('#')) {
+          // For anchor links, close the menu
+          mainNav.classList.remove('active');
+          menuToggle?.classList.remove('active');
+          document.body.classList.remove('menu-open');
+        } else {
+          // For navigation to other pages, do nothing - let the browser navigate
+          // The menu will disappear when the page unloads
+        }
       });
     });
   }
