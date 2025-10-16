@@ -8,3 +8,5 @@ vendor/
 
 # macOS
 .DS_Store
+
+gemfile.lock
