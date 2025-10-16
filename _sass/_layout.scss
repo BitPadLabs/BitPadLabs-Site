@@ -513,64 +513,6 @@
       color: $light-green;
     }
   }
-  // Mobile menu styling
-  @media (max-width: $breakpoint-md) {
-    .main-nav {
-      position: fixed;
-      top: 0;
-      right: -100%;
-      width: 280px;
-      max-width: 80%;
-      height: 100vh;
-      background-color: $dark-green;
-      padding: 80px 20px 20px;
-      transition: right 0.3s ease;
-      z-index: 1000;
-      box-shadow: -2px 0 10px rgba(0, 0, 0, 0.3);
-      overflow-y: auto;
-      
-      &.active {
-        right: 0;
-      }
-      
-      ul {
-        flex-direction: column;
-        margin: 0;
-        padding: 0;
-        
-        li {
-          margin: 0 0 20px 0;
-          
-          a {
-            display: block;
-            padding: 12px 0;
-            font-size: 1.1rem;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-          }
-        }
-      }
-    }
-    
-    .menu-toggle {
-      position: relative;
-      z-index: 1001;
-    }
-    
-    body.menu-open {
-      overflow: hidden;
-      
-      &:before {
-        content: '';
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: rgba(0, 0, 0, 0.5);
-        z-index: 999;
-      }
-    }
-  }
 }
 
 // Mobile menu overlay
@@ -589,22 +531,9 @@ body.menu-open {
   }
 }
 
-// Desktop visibility controls
+// Desktop visibility controls - hide menu toggle on desktop
 @media (min-width: 769px) {
   .menu-toggle {
-    display: none !important;
-  }
-}
-
-// Extra small mobile screens
-@media (max-width: 480px) {
-  .site-footer .main-nav {
-    width: 70%;
-    max-width: 250px;
-    padding: 70px 10px 20px;
-    
-    ul li a {
-      font-size: 1rem;
-    }
+    display: none;
   }
 }
