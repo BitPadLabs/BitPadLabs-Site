@@ -4,7 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const mainNav = document.querySelector('.main-nav');
   
   if (menuToggle && mainNav) {
-    menuToggle.addEventListener('click', function() {
+    menuToggle.addEventListener('click', function(e) {
+      e.stopPropagation();
       menuToggle.classList.toggle('active');
       mainNav.classList.toggle('active');
       document.body.classList.toggle('menu-open');
@@ -13,33 +14,30 @@ document.addEventListener('DOMContentLoaded', () => {
     // Also add touch event for mobile
     menuToggle.addEventListener('touchend', function(e) {
       e.preventDefault();
+      e.stopPropagation();
       menuToggle.classList.toggle('active');
       mainNav.classList.toggle('active');
       document.body.classList.toggle('menu-open');
     });
   }
   
-  // Close mobile menu when clicking outside (but not on links)
-  document.addEventListener('click', (e) => {
-    const isClickInsideMenu = mainNav?.contains(e.target);
-    const isClickOnToggle = menuToggle?.contains(e.target);
-    const isClickOnLink = e.target.tagName === 'A' || e.target.closest('a');
-    
-    // Only close if clicking outside AND not on a link
-    if (mainNav?.classList.contains('active') && !isClickInsideMenu && !isClickOnToggle && !isClickOnLink) {
-      mainNav.classList.remove('active');
+  // Close mobile menu when clicking the overlay (body.menu-open:before)
+  document.body.addEventListener('click', (e) => {
+    if (document.body.classList.contains('menu-open') && 
+        !mainNav?.contains(e.target) && 
+        !menuToggle?.contains(e.target)) {
+      mainNav?.classList.remove('active');
       menuToggle?.classList.remove('active');
       document.body.classList.remove('menu-open');
     }
   });
   
-  // Close mobile menu when clicking a nav link
+  // Close mobile menu when clicking a nav link - NO preventDefault or stopPropagation
   if (mainNav) {
     const navLinks = mainNav.querySelectorAll('a');
     navLinks.forEach(link => {
-      link.addEventListener('click', (e) => {
-        // Allow default navigation to happen
-        // Close menu immediately so it animates while page loads
+      link.addEventListener('click', () => {
+        // Just close the menu, let the link navigate normally
         mainNav.classList.remove('active');
         menuToggle?.classList.remove('active');
         document.body.classList.remove('menu-open');
