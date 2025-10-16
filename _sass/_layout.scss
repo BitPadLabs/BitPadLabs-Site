@@ -78,7 +78,7 @@
   }
   
   @media (max-width: $breakpoint-md) {
-    display: block !important;
+    display: none;
   }
 }
 
@@ -466,13 +466,15 @@
       position: fixed;
       top: 0;
       right: -100%;
-      width: 80%;
-      max-width: 300px;
+      width: 75%;
+      max-width: 280px;
       height: 100vh;
       background-color: $dark-green;
-      padding: 70px 20px 20px;
+      padding: 70px 15px 20px;
       transition: right 0.3s ease;
       z-index: 90;
+      box-shadow: -2px 0 10px rgba(0, 0, 0, 0.3);
+      overflow-y: auto;
       
       &.active {
         right: 0;
@@ -481,6 +483,7 @@
       ul {
         flex-direction: column;
         margin: 0;
+        padding: 0;
         
         li {
           margin: 0 0 15px 0;
@@ -488,7 +491,7 @@
           a {
             display: block;
             padding: 10px 0;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
           }
         }
       }
@@ -527,6 +530,30 @@
         background: rgba(0, 0, 0, 0.5);
         z-index: 80;
       }
+    }
+  }
+}
+
+// Desktop visibility controls
+@media (min-width: 769px) {
+  .main-nav {
+    display: block !important;
+  }
+  
+  .menu-toggle {
+    display: none !important;
+  }
+}
+
+// Extra small mobile screens
+@media (max-width: 480px) {
+  .main-nav {
+    width: 70%;
+    max-width: 250px;
+    padding: 70px 10px 20px;
+    
+    ul li a {
+      font-size: 1rem;
     }
   }
 }
