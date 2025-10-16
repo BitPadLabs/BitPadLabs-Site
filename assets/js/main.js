@@ -35,10 +35,14 @@ document.addEventListener('DOMContentLoaded', () => {
   if (mainNav) {
     const navLinks = mainNav.querySelectorAll('a');
     navLinks.forEach(link => {
-      link.addEventListener('click', () => {
-        mainNav.classList.remove('active');
-        menuToggle?.classList.remove('active');
-        document.body.classList.remove('menu-open');
+      link.addEventListener('click', (e) => {
+        // Don't prevent default - let the link navigate
+        // Close menu after a tiny delay to ensure navigation starts
+        setTimeout(() => {
+          mainNav.classList.remove('active');
+          menuToggle?.classList.remove('active');
+          document.body.classList.remove('menu-open');
+        }, 100);
       });
     });
   }
