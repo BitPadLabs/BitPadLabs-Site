@@ -31,6 +31,18 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
   
+  // Close mobile menu when clicking a nav link
+  if (mainNav) {
+    const navLinks = mainNav.querySelectorAll('a');
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mainNav.classList.remove('active');
+        menuToggle?.classList.remove('active');
+        document.body.classList.remove('menu-open');
+      });
+    });
+  }
+  
   // Contact form submission
   const contactForm = document.getElementById('contactForm');
   if (contactForm) {
