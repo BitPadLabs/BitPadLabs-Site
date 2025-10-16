@@ -76,10 +76,6 @@
       }
     }
   }
-  
-  @media (max-width: $breakpoint-md) {
-    display: none;
-  }
 }
 
 .menu-toggle {
@@ -92,6 +88,7 @@
   border: none;
   cursor: pointer;
   padding: 0;
+  z-index: 100;
   
   span {
     height: 2px;
@@ -101,7 +98,7 @@
   }
   
   @media (max-width: $breakpoint-md) {
-    display: flex;
+    display: flex !important;
   }
 }
 
