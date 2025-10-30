@@ -3,25 +3,33 @@
   github: hrcassels
   image: hannah.jpg
   bio: >-
-    Hannah leads the vision for BitPadLabs and specializes in full-stack 
-    development, product ownership, and small business operations. She is 
-    one of the legal owners of BitPadLabs, LLC.
+    Hannah leads the vision for BitPadLabs products and specializes in full-stack 
+    development, product ownership, and supporting small business operations. She is 
+    a founding member and co-owner of BitPadLabs, LLC.
 
 - name: Jaime Inman
-  role: Chief Financial Officer
+  role: Chief Financial & Operations Officer
   image: jaime5.jpeg
   bio: >-
     Jaime oversees financial operations, budgeting, and fiscal strategy for BitPadLabs.
     She ensures sound financial management and compliance while supporting the company's
-    growth objectives. She is one of the legal owners of BitPadLabs, LLC.
+    growth objectives. She is a founding member and co-owner of BitPadLabs, LLC.
 
 - name: Melanie Amerson
-  role: Chief Growth Officer
+  role: Chief Strategy Officer
   image: melanie2.jpeg
   bio: >-
-    Melanie drives business development and strategic partnerships for BitPadLabs.
+    Melanie drives strategic planning and business development for BitPadLabs.
     She focuses on market expansion, federal and state contracts, and scaling operations
-    to accelerate company growth. She is one of the legal owners of BitPadLabs, LLC.
+    to accelerate company growth. She is a founding member and co-owner of BitPadLabs, LLC.
+
+- name: Ryan Burke
+  role: Chief Growth Officer
+  image: ryan.jpeg
+  bio: >-
+    Ryan leads growth initiatives and customer acquisition strategies for BitPadLabs.
+    He focuses on expanding market presence, building strategic partnerships, and 
+    driving revenue growth through innovative business development. He is a founding non-member of BitPadLabs, LLC.
 
 - name: Christopher Inman
   role: Chief Technology Officer
@@ -30,3 +38,4 @@
   bio: >-
     Chris serves as the engineering mentor and technical lead. He focuses on infrastructure, 
     product strategy, DevSecOps, and capability transfer to ensure long-term success.
+    He is a founding non-member of BitPadLabs, LLC.
