@@ -1,5 +1,5 @@
 - name: Hannah Cassels
-  role: Chief Executive Officer
+  role: Chief Executive Officer (CEO)
   github: hrcassels
   image: hannah.jpg
   bio: >-
@@ -8,7 +8,7 @@
     a founding member and co-owner of BitPadLabs, LLC.
 
 - name: Jaime Inman
-  role: Chief Financial & Operations Officer
+  role: Chief Operations & Finance Officer (COFO)
   image: jaime5.jpeg
   bio: >-
     Jaime oversees financial operations, budgeting, and fiscal strategy for BitPadLabs.
@@ -16,7 +16,7 @@
     growth objectives. She is a founding member and co-owner of BitPadLabs, LLC.
 
 - name: Melanie Amerson
-  role: Chief Strategy Officer
+  role: Chief Strategy Officer (CSO)
   image: melanie2.jpeg
   bio: >-
     Melanie drives strategic planning and business development for BitPadLabs.
@@ -24,7 +24,7 @@
     to accelerate company growth. She is a founding member and co-owner of BitPadLabs, LLC.
 
 - name: Ryan Burke
-  role: Chief Growth Officer
+  role: Chief Growth Officer (CGO)
   image: ryan.jpeg
   bio: >-
     Ryan leads growth initiatives and customer acquisition strategies for BitPadLabs.
@@ -32,7 +32,7 @@
     driving revenue growth through innovative business development. He is a founding non-member of BitPadLabs, LLC.
 
 - name: Christopher Inman
-  role: Chief Technology Officer
+  role: Chief Technology Officer (CTO)
   github: Severswoed
   image: chris.jpg
   bio: >-
